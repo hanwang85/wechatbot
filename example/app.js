@@ -18,4 +18,4 @@ app.get('/', (req, res) => {
 
 app.use('/api', api)
 
-const server = app.listen(3000)
+const server = app.listen(80)
