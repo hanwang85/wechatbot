@@ -61,14 +61,9 @@ router.get('/members/:uuid/:uid', (req, res) => {
   let bot = botInstanceArr[req.params.uuid]
 
   if (bot.replyUsers.has(req.params.uid)) {
-    console.log('remove user', req.params.uid)
-
     bot.replyUsers.delete(req.params.uid)
     debug('删除自动回复用户', req.params.uid)
   } else {
-    console.log('add user', req.params.uid)
-
-
     bot.replyUsers.add(req.params.uid)
     debug('增加自动回复用户', req.params.uid)
   }
