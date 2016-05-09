@@ -1,5 +1,5 @@
 /*!
- * wechat4u.js
+ * wechat4u.js test
  * Copyright(c) 2016-2017 nodeWechat
  * MIT Licensed
  */
